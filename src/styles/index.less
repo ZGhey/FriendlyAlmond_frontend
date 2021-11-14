@@ -1,0 +1,356 @@
+@import '../assets/iconfonts/iconfont.css';
+
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.a-btn {
+  line-height: 1.499;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  height: 38px;
+  padding: 0 15px;
+  font-size: 18px;
+  border-radius: 16px;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+
+  &:focus,
+  &:hover {
+    color: #40a9ff;
+    background-color: #fff;
+    border-color: #40a9ff;
+  }
+}
+
+.a-btn-primary {
+  color: #fff;
+  background-color: #1890ff;
+  border-color: #1890ff;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+  }
+}
+
+.a-btn-block {
+  width: 100%;
+}
+
+.a-btn-danger {
+  color: #fff;
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: #ff7875;
+    border-color: #ff7875;
+  }
+}
+.a-btn-link {
+  color: #1890ff;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  &:focus,
+  &:hover {
+    color: #40a9ff;
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+.flex-form-item {
+  display: flex;
+  justify-content: space-between;
+}
+.form-item {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+
+  label {
+    margin: 10px 0;
+    font-size: 22px;
+  }
+
+  .form-item-wrapper {
+    height: 38px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 16px;
+    background: #f9f9f9;
+    border: 0;
+    padding: 0 12px;
+    &.textarea {
+      height: 200px;
+    }
+  }
+  input {
+    width: 100%;
+    height: 100%;
+    outline: medium;
+    border: none;
+    font-variant: tabular-nums;
+    list-style: none;
+    background: #f9f9f9;
+    font-feature-settings: 'tnum';
+  }
+  &.submit {
+    margin-top: 70px;
+  }
+}
+
+.title {
+  position: relative;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+.title:before {
+  content: '';
+  position: absolute;
+  width: 43%;
+  height: 1px;
+  top: 50%;
+  background-color: #333;
+  left: 2%;
+}
+.title:after {
+  content: '';
+  position: absolute;
+  width: 43%;
+  height: 1px;
+  top: 50%;
+  background-color: #333;
+  right: 2%;
+}
+
+.container {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0 54px;
+  min-height: 100%;
+}
+.admin-container {
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  padding-left: 54px;
+}
+.getCaptcha {
+  display: block;
+  width: 100%;
+  height: 38px;
+  cursor: pointer;
+  position: relative;
+  top: 55%;
+  border-radius: 16px;
+}
+
+//  cover ant design css
+.ant-collapse {
+  border: 0;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  color: #000000;
+}
+.ant-collapse > .ant-collapse-item {
+  border-bottom: 1px solid #000000;
+  &.ant-collapse-item-active {
+    border-bottom: 0;
+  }
+}
+.ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header {
+  padding: 12px 0;
+  padding-right: 40px;
+  font-size: 24px;
+  text-align: left;
+  font-weight: 600;
+}
+.ant-collapse > .ant-collapse-item:last-child,
+.ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
+  border-radius: 0;
+}
+.ant-collapse-content > .ant-collapse-content-box {
+  font-size: 16px;
+  color: #000000;
+}
+.ant-collapse-content {
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border-top: 1px solid #000000;
+}
+
+.ant-modal-title {
+  font-size: 30px;
+}
+.ant-menu {
+  background-color: #f9f9f9;
+}
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+  border-right: 0;
+}
+.ant-menu-vertical .ant-menu-item,
+.ant-menu-vertical-left .ant-menu-item,
+.ant-menu-vertical-right .ant-menu-item,
+.ant-menu-inline .ant-menu-item,
+.ant-menu-vertical .ant-menu-submenu-title,
+.ant-menu-vertical-left .ant-menu-submenu-title,
+.ant-menu-vertical-right .ant-menu-submenu-title,
+.ant-menu-inline .ant-menu-submenu-title {
+  font-size: 18px;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #f9f9f9;
+}
+.ant-menu-item {
+  a.router-link-active {
+    background-color: #f9f9f9;
+    color: #c08d5d;
+  }
+}
+
+.ant-menu-item-selected > a,
+.ant-menu-item-selected > a:hover {
+  color: #c08d5d;
+}
+
+.ant-form label {
+  font-size: 18px;
+}
+.ant-input,
+.ant-select-selection {
+  height: 38px;
+  font-size: 16px;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+}
+.ant-select-selection__rendered {
+  height: 38px;
+  line-height: 38px;
+}
+
+.ant-table {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.ant-table-thead > tr > th {
+  font-weight: 600;
+}
+// cover end
+
+input {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+p {
+  font-weight: 600;
+}
+.option {
+  padding: 0 30px;
+  .result {
+    width: 100%;
+    .ptitle {
+      text-align: left;
+      font-size: 18px;
+    }
+    .description {
+      text-align: left;
+    }
+  }
+  p {
+    color: #000000;
+    margin: 0;
+    width: 100%;
+  }
+  .price {
+    text-align: right;
+  }
+  .ant-checkbox-wrapper {
+    display: flex;
+    text-align: left;
+  }
+  .ant-checkbox {
+    padding-top: 5px;
+  }
+  .ant-checkbox-checked::after {
+    border: 0;
+  }
+  .my-checkbox-group {
+    width: 100%;
+  }
+  .ant-list-item-meta-avatar {
+    margin-right: 0;
+    width: 100%;
+  }
+  .ant-checkbox + span {
+    padding-right: 8px;
+    padding-left: 8px;
+    display: inline-block;
+    width: 100%;
+  }
+  .ant-collapse-content > .ant-collapse-content-box {
+    font-size: 16px;
+    color: #000000;
+    // max-height: 340px;
+    // overflow: auto;
+  }
+  .tool {
+    float: right;
+  }
+}
+
+// admin panel
+.a-title {
+  text-align: left;
+  font-weight: 600;
+}
